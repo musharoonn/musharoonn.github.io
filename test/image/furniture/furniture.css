@@ -1,0 +1,70 @@
+html{
+}
+
+body{
+
+	margin: 0;
+}
+
+.background{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+
+}
+
+.img-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: auto;
+}
+
+.img{
+  width: 100%;
+
+}
+/*본문*/
+.hidden-text{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.7;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 50 50px;
+}
+/*스툴(지식백과)*/
+.hidden-text p{
+    font-size: 13px;
+    font-weight: 0;
+
+ 
+}
+
+
+#hover-div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#hover-div:hover + .hidden-text {
+    display: block;
+}

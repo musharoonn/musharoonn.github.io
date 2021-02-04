@@ -1,0 +1,62 @@
+html{
+}
+
+body{
+	margin: 0;
+}
+
+.background{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+	width: auto;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+
+}
+
+.img-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: auto;
+}
+
+.img{
+  width: 100%;
+
+}
+
+.hidden-text{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  font-size: 100px;
+  text-align: center;
+}
+
+.hidden-text p{
+  font-size: 10px;
+  background-color: blue;
+}
+
+#hover-div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#hover-div:hover + .hidden-text {
+    display: block;
+}
