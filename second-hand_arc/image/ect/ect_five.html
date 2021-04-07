@@ -1,39 +1,198 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>ect_five</title>
-	<link rel="stylesheet" type="text/css" href="ect_five.css">
-	<link href="ect.css" rel="stylesheet">
-<!-- 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
-	<link rel="preconnect" href="https://fonts.gstatic.com"> 
-	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+code,
+pre {
+  font-family: monospace;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+}
+
+body {
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+////////////////////////////////////////////////////////
+
+html{
+}
+
+body{
+ /* font-family: 'Noto Sans KR', sans-serif;*/
+ font-family: 'Nanum Myeongjo', serif;
+  margin: 0;
+}
+
+.background{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+
+}
+
+.img-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: auto;
+}
+
+.img{
+  width: 100%;
+
+}
+/*본문*/
+.hidden-text{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 80%;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 1.7;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+   z-index: 5;
 
 
-</head>
-<body>
-	<img class="background" src= "backgr/five.jpg">
-	<div class="img-wrapper">
-		<img class="img" src="five.jpg">
-		<div id="hover-div"></div>
-		<div class="hidden-text">
-			<br>Vinprime_고속터미널점 <br><br> 5000
-			<br><br><br>
 
-                <p>Q.&nbsp;(의류) 거위털 오리털 토끼털 중에서 어느게 가장 따뜻하요? 순서대로 알려주세요?왜 그렇죠?
-                <br>
-                <br>
-                A. 질문해주신대로 거위털,오리털,토끼털 순으로 따뜻합니다 ~ <br>털의 밀도와 부피 등등을 생각해보시면 될것 같습니다 ! 
-                
-                 <br><br><br>
+}
+/*동물퍼*/
+.hidden-text p{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 4px 4px 5px red;
 
-				<모피동물>
-				 <br><br>
-				이들이 살아있는 동물에게 몽둥이질을 가하고 껍질을 벗기는 것은 장비가 부족해서가 아니다. 이들은 동물의 껍질을 팔아 이득을 취해야 한다. 그러나 죽은 동물에게서 털을 잘라내기 위해서는 여러 번 칼질을 해야 하고 그만큼 모피에 흠집이 나 상품성이 떨어지기 때문이다. 사람들은 현대사회에서 절대적인 필요 때문에 모피를 선택하지 않는다. 취향과 패션 과시욕이 모피를 선택하는 유일한 목적이 된 시대. 우리는 자본주의 사회에 살고 있고 모피는 이제 산업화되었다. 현대사회에서 모피가 생활필수품은 아니다. 즉 최소의 자본과 비용으로 최대의 이윤을 남겨야 하는 자본의 논리 안에 모피는 생산되고 소비된다. (동물권단체 케어)			
-			</p>
-		</div>
-	</div>
+}
 
-</body>
-</html>
+
+#hover-div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#hover-div:hover + .hidden-text {
+    display: block;
+}
