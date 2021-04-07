@@ -174,8 +174,13 @@ body{
 .hidden-text p{
     font-size: 13px;
     font-weight: lighter;
- 
+
 }
+
+.hidden-text t{
+    font-size: 13px;
+    font-weight: bold;
+  }
 
 
 #hover-div{
